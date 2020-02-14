@@ -22,7 +22,9 @@ class HomePage extends StatelessWidget {
     return Padding(
             padding: EdgeInsets.all(20), 
             child: SizedBox(
-            child: Placeholder(), width: 100, height: 100));
+              child: Image.asset('assets/babyyoda.png'),
+              width: 100, height: 100)
+            );
   }
 
   Widget placeholderRow() {
