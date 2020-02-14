@@ -13,32 +13,21 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center, 
-        children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          Padding(
-            padding: EdgeInsets.all(20),
-            child: SizedBox(
-            child: Placeholder(), width: 100, height: 100)), 
-          Padding(
-            padding: EdgeInsets.all(20), 
-            child: SizedBox(
-            child: Placeholder(), width: 100, height: 100))
-        ]),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          Padding(
-            padding: EdgeInsets.all(20),
-            child: SizedBox(
-            child: Placeholder(), width: 100, height: 100)), 
-          Padding(
-            padding: EdgeInsets.all(20), 
-            child: SizedBox(
-            child: Placeholder(), width: 100, height: 100))
-        ])
-      ])
+        children: [placeholderRow(), placeholderRow()]
+      )
     );
+  }
+
+  Widget paddedPlaceholder() {
+    return Padding(
+            padding: EdgeInsets.all(20), 
+            child: SizedBox(
+            child: Placeholder(), width: 100, height: 100));
+  }
+
+  Widget placeholderRow() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [paddedPlaceholder() , paddedPlaceholder()]);
   }
 }
