@@ -13,16 +13,21 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center, 
-        children: [placeholderRow(), placeholderRow()]
+        children: [banner(context), placeholderRow(), placeholderRow()]
       )
     );
+  }
+
+  Widget banner(BuildContext context) {
+    return Text('Baby Yoda', style: TextStyle(fontFamily: 'HomemadeApple', fontSize: 50));
+    // return Text('Baby Yoda', style: Theme.of(context).textTheme.display3);
   }
 
   Widget paddedPlaceholder() {
     return Padding(
             padding: EdgeInsets.all(20), 
             child: SizedBox(
-              child: Image.asset('assets/babyyoda.png'),
+              child: Image.asset('assets/images/babyyoda.png'),
               width: 100, height: 100)
             );
   }
