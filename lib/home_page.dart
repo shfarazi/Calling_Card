@@ -25,10 +25,7 @@ class HomePage extends StatelessWidget {
     // );
   }
 
-  // Widget banner(BuildContext context) {
-  //   return Text('Baby Yoda', style: TextStyle(fontFamily: 'Akronim', fontSize: 70));
-  //   // return Text('Baby Yoda', style: Theme.of(context).textTheme.display3);
-  // }
+  
 
   // Widget paddedPlaceholder(BuildContext context) {
   //   return FractionallySizedBox(

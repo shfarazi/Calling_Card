@@ -15,8 +15,7 @@ class EightBall {
 
   String prediction;
 
-  EightBall()
-  {
+  EightBall() {
     prediction = "";
   }
 
