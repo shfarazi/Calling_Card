@@ -16,18 +16,7 @@ class HomePage extends StatelessWidget {
             padding: EdgeInsets.all(padding(context)), 
               child: Image.asset('assets/images/babyyoda.png'),
             ));
-    // return Scaffold(
-    //   appBar: AppBar(title: Text(title)),
-      // body: Column(
-      //   mainAxisAlignment: MainAxisAlignment.center, 
-      //   children: [placeholderRow(context)]
-      // )
-    // );
   }
-
-  
-
-  
 
   double padding(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
@@ -36,10 +25,4 @@ class HomePage extends StatelessWidget {
       return MediaQuery.of(context).size.width * 0.1;
     }
   }
-  
-  // Widget placeholderRow(BuildContext context) {
-  //   return Row(
-  //     mainAxisAlignment: MainAxisAlignment.center,
-  //     children: [paddedPlaceholder(context)]);
-  // }
 }
