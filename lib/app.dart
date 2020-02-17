@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'controllers/main_tab_controller.dart';
-
 
 class App extends StatelessWidget {
 
