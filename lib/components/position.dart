@@ -30,7 +30,8 @@ class Position extends StatelessWidget {
           Spacer(),
           Text(location)
         ]),
-        Text(description)
+        Text(description),
+        SizedBox(height: 15),
       ]
     );
   }

@@ -8,25 +8,36 @@ class ResumeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(20), 
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text ('Baby Yoda', style: TextStyle(fontFamily: 'Akronim', fontSize: 30)),
-          GestureDetector(
-            onTap: () => launch('mailto:babyyoda@space.dev'),
-            child: Text ('babyyoda@space.dev', style: TextStyle(fontFamily: 'ArchitectsDaughter', fontSize: fontSize)),
-          ),
-          GestureDetector(
-            onTap: () => launch('http://flutter.io/b-yoda'),
-            child: Text ('flutter.io/b-yoda', style: TextStyle(fontFamily: 'ArchitectsDaughter', fontSize: fontSize)),
-          ),
-          SizedBox(height: 25),
-          Position(title: "Partner Baby Yoda"),
-          Position(title: "Principal Baby Yoda"),
-          Position(title: "Senior Baby Yoda"),
-          Position(title: "Baby Yoda"),
-      ]));
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.all(20), 
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text ('Baby Yoda', style: TextStyle(fontFamily: 'Akronim', fontSize: 30, color: Colors.indigo)),
+            GestureDetector(
+              onTap: () => launch('mailto:babyyoda@space.dev'),
+              child: Text ('babyyoda@space.dev', style: TextStyle(fontFamily: 'ArchitectsDaughter', fontSize: fontSize)),
+            ),
+            GestureDetector(
+              onTap: () => launch('http://flutter.io'),
+              child: Text ('flutter.io/b-yoda', style: TextStyle(fontFamily: 'ArchitectsDaughter', fontSize: fontSize)),
+            ),
+            SizedBox(height: 25),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+            Position(title: 'Mischief Engineer', company: 'McLaren', start: '2000', end:'2050', location: 'Redmond, WA', description: 'Causing the blue screen of death, setting company\'s products to free for all, putting everyone\'s mouse in jello, and many more mischievious activities.'),
+      ])));
   }
 }

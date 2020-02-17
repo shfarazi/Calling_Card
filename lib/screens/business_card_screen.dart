@@ -15,7 +15,7 @@ class BusinessCardScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(20.0),
           child: Image.asset('assets/images/babyyoda.png', height: MediaQuery.of(context).size.height * 0.25,)),
         SizedBox(height: 5),
-        Text ('Baby Yoda', style: TextStyle(fontFamily: 'Akronim', fontSize: 25)),
+        Text ('Baby Yoda', style: TextStyle(fontFamily: 'Akronim', fontSize: 40, color: Colors.indigo)),
         SizedBox(height: 5),
         Text ('Mischievous Developer', style: TextStyle(fontFamily: 'ArchitectsDaughter', fontSize: fontSize)),
         SizedBox(height: 5),
@@ -28,7 +28,7 @@ class BusinessCardScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
           GestureDetector(
-            onTap: () => launch('http://flutter.io/b-yoda'),
+            onTap: () => launch('http://flutter.io'),
             child: Text ('flutter.io/b-yoda', style: TextStyle(fontFamily: 'ArchitectsDaughter', fontSize: fontSize)),
           ),
           SizedBox(width: 30),
