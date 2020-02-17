@@ -27,15 +27,7 @@ class HomePage extends StatelessWidget {
 
   
 
-  // Widget paddedPlaceholder(BuildContext context) {
-  //   return FractionallySizedBox(
-  //     widthFactor: 0.8,
-  //     heightFactor: 0.8,
-  //     child:Padding(
-  //           padding: EdgeInsets.all(padding(context)), 
-  //             child: Image.asset('assets/images/babyyoda.png'),
-  //           ));
-  // }
+  
 
   double padding(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
