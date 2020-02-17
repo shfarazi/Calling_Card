@@ -10,7 +10,7 @@ class ResumeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(20), 
+        padding: EdgeInsets.all(50), 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
