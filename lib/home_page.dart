@@ -9,32 +9,48 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center, 
-        children: [banner(context), placeholderRow(), placeholderRow()]
-      )
-    );
-  }
-
-  Widget banner(BuildContext context) {
-    return Text('Baby Yoda', style: TextStyle(fontFamily: 'HomemadeApple', fontSize: 50));
-    // return Text('Baby Yoda', style: Theme.of(context).textTheme.display3);
-  }
-
-  Widget paddedPlaceholder() {
-    return Padding(
-            padding: EdgeInsets.all(20), 
-            child: SizedBox(
+    return FractionallySizedBox(
+      widthFactor: 0.8,
+      heightFactor: 0.8,
+      child:Padding(
+            padding: EdgeInsets.all(padding(context)), 
               child: Image.asset('assets/images/babyyoda.png'),
-              width: 100, height: 100)
-            );
+            ));
+    // return Scaffold(
+    //   appBar: AppBar(title: Text(title)),
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.center, 
+      //   children: [placeholderRow(context)]
+      // )
+    // );
   }
 
-  Widget placeholderRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [paddedPlaceholder() , paddedPlaceholder()]);
+  // Widget banner(BuildContext context) {
+  //   return Text('Baby Yoda', style: TextStyle(fontFamily: 'Akronim', fontSize: 70));
+  //   // return Text('Baby Yoda', style: Theme.of(context).textTheme.display3);
+  // }
+
+  // Widget paddedPlaceholder(BuildContext context) {
+  //   return FractionallySizedBox(
+  //     widthFactor: 0.8,
+  //     heightFactor: 0.8,
+  //     child:Padding(
+  //           padding: EdgeInsets.all(padding(context)), 
+  //             child: Image.asset('assets/images/babyyoda.png'),
+  //           ));
+  // }
+
+  double padding(BuildContext context) {
+    if (MediaQuery.of(context).orientation == Orientation.landscape) {
+      return MediaQuery.of(context).size.width * 0.05;
+    } else {
+      return MediaQuery.of(context).size.width * 0.1;
+    }
   }
+  
+  // Widget placeholderRow(BuildContext context) {
+  //   return Row(
+  //     mainAxisAlignment: MainAxisAlignment.center,
+  //     children: [paddedPlaceholder(context)]);
+  // }
 }
