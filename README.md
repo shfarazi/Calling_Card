@@ -1,3 +1,3 @@
 # call_me_maybe
 
-A professional calling card app - Enjoy :)
+A generic professional calling card app for baby Yoda - Enjoy :)
